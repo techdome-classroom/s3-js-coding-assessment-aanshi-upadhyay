@@ -15,8 +15,6 @@ var isValid = function(s) {
    
     for (let char of s) {
         if (char in bracketMap) {
-            // If it's a closing bracket, pop the top element from the stack if it's not empty
-            // Otherwise, use a dummy value '#'
             let topElement = stack.length > 0 ? stack.pop() : '#';
             // Check if the popped element matches the corresponding opening bracket
             if (bracketMap[char] !== topElement) {
