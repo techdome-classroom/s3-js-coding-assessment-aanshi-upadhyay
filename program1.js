@@ -12,8 +12,7 @@ var isValid = function(s) {
         '}': '{',
         ']': '['
     };
-    
-    // Traverse the string
+   
     for (let char of s) {
         if (char in bracketMap) {
             // If it's a closing bracket, pop the top element from the stack if it's not empty
