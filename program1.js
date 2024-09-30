@@ -7,7 +7,7 @@ var isValid = function(s) {
     let stack = [];
     
    
-    const bracket = {
+    const bracketMap = {
         ')': '(',
         '}': '{',
         ']': '['
