@@ -23,8 +23,6 @@ var isValid = function(s) {
             stack.push(char);
         }
     }
-    
-    // If the stack is empty, all opening brackets have been matched correctly
     return stack.length === 0;
 };
 
